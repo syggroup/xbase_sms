@@ -1,0 +1,102 @@
+# ---------------------------------------------------------------------------------
+# Script de construção do SAGI
+# ---------------------------------------------------------------------------------
+# Autor  : Leonardo Machado
+# Versão : 6.0
+# Data   : 11/02/2012
+# Harbour : Harbour 3.1.0dev (Rev. 17140) Copyright (c) 1999-2012,
+#      http://harbour-project.org/
+# Compilador: MinGW GNU C 4.6.1 (32-bit)
+# ---------------------------------------------------------------------------------
+# Nome do Executável
+# ---------------------------------------------------------------------------------
+# -o<outname> Diretiva para nome de arquivo de saída
+-oexemplo
+# ---------------------------------------------------------------------------------
+# Bibliotecas
+# ---------------------------------------------------------------------------------
+# l<libname> Diretiva para linkar com a biblioteca <libname>. <libname> deve omitir
+# path, extensão e o prefixo 'lib' (… menos que faça parte do nome-de-arquivo).
+-lhwgui
+-lprocmisc
+-lhbct
+-lhbtip
+-lhbwin
+-lxhb
+-lhbxbp
+-lhbxpp
+
+# ---------------------------------------------------------------------------------
+# Caminhos dos Includes
+# ---------------------------------------------------------------------------------
+# -i<p>|-incpath=<p> paths adicionais para pesquisa de arquivos headers
+-incpath=${HB_PATH}\contrib\hwgui\include;
+# ---------------------------------------------------------------------------------
+# Caminho das Lib
+# ---------------------------------------------------------------------------------
+# -L<libpath>    path adicional para pesquisar por bibliotecas
+-L${HB_PATH}\contrib;
+-L${HB_PATH}\contrib\hwgui\lib;
+# ---------------------------------------------------------------------------------
+# Outros Parâmetros
+# ---------------------------------------------------------------------------------
+# .\OBJ\ Grava os arquivos .c e .o na subpasta OBJ
+# ---------------------------------------------------------------------------------
+# -workdir=<dir>   Working directory
+#          Diretiva para diretório de trabalho da compilação.
+#          (default: .hbmk/plat/comp in incremental mode, OS temp
+#          directory otherwise).
+-workdir=.\obj\
+-gtgui
+# ---------------------------------------------------------------------------------
+# -[no]head[=<m>]  Control source header parsing (in incremental build mode)
+#          <m> can be: native (uses compiler to extract
+#          dependencies), full (default, uses simple text parser on
+#          the whole file), dep, off.
+#-head=full
+# ---------------------------------------------------------------------------------
+# /n[<type>]     No implicit starting procedure
+#          <type>: 0=no implicit starting procedure
+#              1=no starting procedure at all
+#              2=add starting procedure if necessary
+#-n
+# ---------------------------------------------------------------------------------
+# -[no]warn[=lev]  Define o nível de avisos (warnings) do compilador C
+#          <lev> pode ser: max, yes, low, no, def (padrão: yes).
+-nowarn
+#
+# Pausa em caso de avisos na compilação
+#
+-pause
+# ---------------------------------------------------------------------------------
+# -inc        Habilita o modo de compilaçao incremental.
+-inc
+# ---------------------------------------------------------------------------------
+# -[no]debug     Adicionar/excluir informações de debug do compilador C.
+#          Para compilar com Harbour utilize a opção -b como de
+#          costume.
+#-b
+# ---------------------------------------------------------------------------------
+# -d<diretiva>    Diretiva de compilação para ifdef
+#-dHARBOUR
+# ---------------------------------------------------------------------------------
+# -icon=<file>    Seta o ícone para o aplicativo. <file> deve possuir um
+#          formato compatível com a plataforma de destino.
+#          Diretiva para informar o icone da aplicação.
+#-icon=harb_win.ico
+# ---------------------------------------------------------------------------------
+# /u[<file>]     Usa comando def set em <arquivo> (ou nenhum)
+#          Diretiva para carregar arquivo header (.ch) para toda
+#          aplicação.
+#-uE:\HInclude\stdsmf.ch
+# ---------------------------------------------------------------------------------
+# -mt para compilar o aplicativo compativel com Mult=theread
+#-mt
+# ---------------------------------------------------------------------------------
+# Prg(s) e Rc(s)
+# ---------------------------------------------------------------------------------
+#D:\devel\hb-mingw32\contrib\sqlrdd\lib\sqlrdd.hbx
+
+exemplo.prg
+exemplo.rc
+#-------------------

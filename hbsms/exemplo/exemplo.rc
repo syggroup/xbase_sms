@@ -1,0 +1,48 @@
+#include <windows.h>
+
+LANGUAGE LANG_PORTUGUESE,SUBLANG_PORTUGUESE_BRAZILIAN
+
+APPLICATION_ICO ICON "D:\\devel\\Res\\sagi.ico"
+
+1    24     "D:\\devel\\res\\WindowsXP.Manifest"
+1001 ICON   "D:\\devel\\res\\sagi.ico"
+1002 BITMAP "D:\\devel\\res\\ok.bmp"
+1003 BITMAP "D:\\devel\\res\\sair.bmp"
+1004 BITMAP "D:\\devel\\res\\logosuporte.bmp"
+1005 BITMAP "D:\\devel\\res\\inicio.bmp"
+1006 BITMAP "D:\\devel\\res\\fim.bmp"
+1007 BITMAP "D:\\devel\\res\\avanca.bmp"
+1008 BITMAP "D:\\devel\\res\\volta.bmp"
+1009 BITMAP "D:\\devel\\res\\email.bmp"
+1010 BITMAP "D:\\devel\\res\\buscar.bmp"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILEFLAGSMASK 0x0
+FILEFLAGS 0x0
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+FILESUBTYPE VFT2_UNKNOWN
+{
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "040904E4"
+    {
+      VALUE "Comments",         "Sistema Desenvolvido Pela Sygecom Informática Ltda - www.sygecom.com.br \0"
+      VALUE "CompanyName",      "Sygecom Informática Ltda - www.sygecom.com.br\0"
+      VALUE "FileDescription",  "Sistema de Teste de SMS\0"
+      VALUE "FileVersion",      "1.0000\0"
+      VALUE "InternalName",     "Projeto SAGI\0"
+      VALUE "LegalCopyright",   "Sygecom Informática Ltda\0"
+      VALUE "LegalTrademarks",  "SMS / SYGECOM\0"
+      VALUE "OriginalFilename", "EXEMPLO.EXE\0"
+      VALUE "ProductName",      "Sistema de Teste de SMS\0"
+      VALUE "ProductVersion",   "1.0000\0"
+    }
+  }
+  BLOCK "VarFileInfo"
+  {
+    VALUE "Translation", 0x416, 0x4B0
+  }
+}

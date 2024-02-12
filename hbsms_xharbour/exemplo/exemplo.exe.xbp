@@ -1,0 +1,50 @@
+CINI = 
+C_OUTPUTFOLDER = 
+DEFFILE = 
+INCLUDEFOLDERS = D:\Devel\xHarbour\contrib\hwgui\include;D:\devel\xharbour\contrib\syg_pgsql;
+LAUTORUN =
+LDEBUG = .F.
+LGUI = .T.
+LIBFOLDERS =
+LMT = .F.
+LNOAUTOFWH = .F.
+LPRG_CLASSICDEBUG = .F.
+LPRG_DEBUG = .F.
+LUSEDLL = .F.
+MAPFILE = 
+MYC_FLAGS = 
+MYDEFINES =
+MYLINK_FLAGS = 
+MYPRG_FLAGS = 
+MYRC_FLAGS = 
+MYSLY_FLAGS = 
+OUTPUTFOLDER = obj
+PRG_OUTPUTFOLDER = 
+RC_OUTPUTFOLDER = 
+RUNARGUMENTS =
+SLY_OUTPUTFOLDER = 
+STARTIN =
+TARGETFOLDER =
+
+[exemplo.prg]
+MYC_FLAGS =
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[exemplo.rc]
+MYDEFINES = 
+MYRC_FLAGS = 
+
+[D:\Devel\xHarbour\contrib\hwgui\lib\hwgui.lib]
+
+[D:\devel\xharbour\contrib\syg_pgsql\libpq.lib]
+
+[D:\devel\xharbour\contrib\syg_pgsql\syg_pgsql.lib]
+
+[D:\Devel\xHarbour\contrib\sygecom.lib]
+
+[D:\Devel\xHarbour\contrib\fivehc.lib]
+
+[D:\Devel\xHarbour\lib\tip.lib]
+
+[D:\Devel\xHarbour\lib\codepage.lib]
